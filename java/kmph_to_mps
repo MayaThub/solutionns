@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class IN{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+
+        System.out.printf("%.2f",x/3.6);
+    }
+}
