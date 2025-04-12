@@ -1,0 +1,5 @@
+n = int(input())
+arr = list(map(int, input().split()))
+even_sum = sum(filter(lambda x : x % 2 == 0,arr))
+res = abs(sum(arr) - 2 * even_sum)
+print(res)
