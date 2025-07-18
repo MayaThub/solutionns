@@ -1,17 +1,13 @@
-import numpy as np 
-
 n = int(input())
-
-arr = np.array(list(map(int, input().split())))
-
+arr = list(map(int, input().split()))
 a, b = map(int, input().split())
 
 low = min(a, b)
 high = max(a, b)
 
-mask = (arr < low) | (arr > high)
+result = [x for x in arr if x < low or x > high]
 
-if arr[mask].size > 0:
-    print(*arr[mask])
+if result:
+    print(*result)
 else:
     print(-1)
